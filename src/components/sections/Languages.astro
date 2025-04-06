@@ -1,0 +1,19 @@
+---
+import {languages} from "@cv";
+
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Languages">
+	<ul class="list-disc list-inside ml-4 text-sm">
+		{
+			languages.map(({language, fluency}) => (
+				<li class="mb-2">
+					<span class="text-base font-medium">{language}</span>
+					<br />
+					<span class="ml-10 text-base">{fluency}</span>
+				</li>
+			))
+		}
+	</ul>
+</Section>

@@ -1,0 +1,19 @@
+---
+import {certificates} from "@cv";
+
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Certificates">
+	<ul>
+		{
+			certificates.map(({name, date, issuer, url}) => (
+				<li class="mb-2 text-sm">
+					<a href={url} target="_blank" rel="noopener noreferrer">
+						<span class="font-medium">{name}</span> - <span>{issuer}</span>
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</Section>

@@ -1,0 +1,46 @@
+---
+import {work} from "@cv";
+
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Experience">
+	<ul class="flex flex-col gap-6">
+		{
+			work.map(({name, position, url, startDate, endDate, summary}) => {
+				const startYear = startDate && new Date(startDate).getFullYear();
+				const startMonth = startDate && new Date(startDate).toLocaleString("en-US", {month: "short"});
+				const endYear = endDate ? new Date(endDate).getFullYear() : "Present";
+				const endMonth = endDate && new Date(endDate).toLocaleString("en-US", {month: "short"});
+				const start = startMonth ? `${startMonth} ${startYear}` : startYear;
+				const end = endMonth ? `${endMonth} ${endYear}` : endYear;
+				const years = `${start} - ${end}`;
+
+				return (
+					<li>
+						<article>
+							<header class="flex flex-row justify-between mb-2">
+								<div>
+									<h3 class="text-xl font-medium">
+										{url ? (
+											<a href={url} target="_blank" rel="noopener noreferrer">
+												{name}
+											</a>
+										) : (
+											name
+										)}
+									</h3>
+									<h4 class="text-lg">{position}</h4>
+								</div>
+								<time>{years}</time>
+							</header>
+							<footer>
+								<p class="text-sm text-zinc-800 text-pretty">{summary}</p>
+							</footer>
+						</article>
+					</li>
+				);
+			})
+		}
+	</ul>
+</Section>

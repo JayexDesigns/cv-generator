@@ -1,0 +1,11 @@
+---
+import {basics} from "@cv";
+
+import Section from "@/components/Section.astro";
+
+const {summary} = basics;
+---
+
+<Section title="About">
+	<p class="text-sm text-zinc-800 text-pretty">{summary}</p>
+</Section>

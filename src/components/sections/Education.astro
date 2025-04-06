@@ -1,0 +1,41 @@
+---
+import {education} from "@cv";
+
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Education">
+	<ul class="flex flex-col gap-6">
+		{
+			education.map(({institution, studyType, area, url, endDate}) => {
+				const endYear = endDate ? new Date(endDate).getFullYear() : "Currently Studying";
+				const endMonth = endDate && new Date(endDate).toLocaleString("en-US", {month: "short"});
+				const end = endMonth ? `${endMonth} ${endYear}` : endYear;
+
+				return (
+					<li>
+						<article>
+							<header class="flex flex-row justify-between">
+								<div>
+									<h3 class="text-xl font-medium">
+										{url ? (
+											<a href={url} target="_blank" rel="noopener noreferrer">
+												{institution}
+											</a>
+										) : (
+											institution
+										)}
+									</h3>
+									<h4 class="text-lg">
+										{studyType} - {area}
+									</h4>
+								</div>
+								<time>{end}</time>
+							</header>
+						</article>
+					</li>
+				);
+			})
+		}
+	</ul>
+</Section>

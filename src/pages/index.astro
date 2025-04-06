@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import {basics} from "@cv";
+
+import About from "@/components/sections/About.astro";
+import Certificates from "@/components/sections/Certificates.astro";
+import Education from "@/components/sections/Education.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Hero from "@/components/sections/Hero.astro";
+import Languages from "@/components/sections/Languages.astro";
+import Skills from "@/components/sections/Skills.astro";
+
+const {name, label} = basics;
 ---
 
-<Layout>
-	<Welcome />
+<Layout title={`Curriculum of ${name} - ${label}`}>
+	<main class="aspect-[1/1.4142] w-[980px] print:w-[910px] flex flex-col justify-between mx-auto m-8 print:m-0 p-8 pb-16 print:p-4 bg-white shadow-2xl print:shadow-none">
+		<Hero />
+		<About />
+		<Experience />
+		<Education />
+		<div class="grid grid-cols-[4fr_3fr_6fr] gap-8">
+			<Skills />
+			<Languages />
+			<Certificates />
+		</div>
+	</main>
 </Layout>

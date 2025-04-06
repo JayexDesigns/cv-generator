@@ -1,0 +1,134 @@
+{
+	"basics": {
+		"name": "Jane Doe",
+		"label": "Software Developer",
+		"image": "/avatar.webp",
+		"email": "janedoe@example.com",
+		"phone": "+00 000 000 000",
+		"summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt assumenda possimus exercitationem consequatur, doloribus esse! Est excepturi, corporis iure, velit quis accusamus, architecto labore at fuga sint vel doloribus odio sed ab! Saepe aliquid est culpa optio, temporibus magni ipsa aspernatur? Officiis blanditiis vel reiciendis eligendi quo cum quas.",
+		"location": {
+			"postalCode": "00000",
+			"city": "Sample City",
+			"region": "Sample Country"
+		},
+		"profiles": [
+			{
+				"network": "Web",
+				"username": "janedoe",
+				"url": "https://portfolio.example.com"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "jane-doe",
+				"url": "https://linkedin.com/in/jane-doe/"
+			},
+			{
+				"network": "GitHub",
+				"username": "janedoe",
+				"url": "https://github.com/janedoe"
+			}
+		]
+	},
+	"work": [
+		{
+			"name": "Tech Solutions Inc.",
+			"position": "Junior Software Developer",
+			"url": "https://techsolutions.example.com",
+			"startDate": "2023-01-01",
+			"endDate": null,
+			"summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt assumenda possimus exercitationem consequatur, doloribus esse! Est excepturi, corporis iure, velit quis accusamus, architecto labore at fuga sint vel doloribus odio sed ab! Saepe aliquid est culpa optio, temporibus magni ipsa aspernatur? Officiis blanditiis vel reiciendis eligendi quo cum quas."
+		},
+		{
+			"name": "Creative Apps Co.",
+			"position": "Frontend Development Intern",
+			"url": null,
+			"startDate": "2022-06-01",
+			"endDate": "2022-12-01",
+			"summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt assumenda possimus exercitationem consequatur, doloribus esse! Est excepturi, corporis iure, velit quis accusamus, architecto labore at fuga sint vel doloribus odio sed ab! Saepe aliquid est culpa optio, temporibus magni ipsa aspernatur? Officiis blanditiis vel reiciendis eligendi quo cum quas."
+		},
+		{
+			"name": "Freelance Projects",
+			"position": "Independent Developer",
+			"url": null,
+			"startDate": "2021-03-01",
+			"endDate": "2022-05-01",
+			"summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt assumenda possimus exercitationem consequatur, doloribus esse! Est excepturi, corporis iure, velit quis accusamus, architecto labore at fuga sint vel doloribus odio sed ab! Saepe aliquid est culpa optio, temporibus magni ipsa aspernatur? Officiis blanditiis vel reiciendis eligendi quo cum quas."
+		}
+	],
+	"education": [
+		{
+			"institution": "Sample University",
+			"studyType": "Bachelor's Degree",
+			"area": "Computer Science",
+			"url": "https://sampleuniversity.example.com/",
+			"endDate": "2024-06-01"
+		},
+		{
+			"institution": "Generic High School",
+			"studyType": "High School Diploma",
+			"area": "Science and Technology",
+			"url": "https://samplehighschool.example.com/",
+			"endDate": "2020-06-01"
+		}
+	],
+	"skills": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"React",
+		"Node.js",
+		"Python",
+		"Git",
+		"SQL",
+		"Docker",
+		"REST APIs",
+		"GraphQL",
+		"MongoDB",
+		"PostgreSQL",
+		"Linux",
+		"Docker",
+		"Kubernetes"
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Fluent"
+		},
+		{
+			"language": "French",
+			"fluency": "Intermediate"
+		}
+	],
+	"certificates": [
+		{
+			"name": "Full Stack Web Development",
+			"date": "2023-05-01",
+			"issuer": "freeCodeCamp",
+			"url": "https://freecodecamp.org/certification/sample-user/full-stack"
+		},
+		{
+			"name": "Introduction to Python",
+			"date": "2022-08-15",
+			"issuer": "Coursera",
+			"url": "https://coursera.org/verify/sample-certificate"
+		},
+		{
+			"name": "Web Design Basics",
+			"date": "2021-12-10",
+			"issuer": "Udemy",
+			"url": "https://udemy.com/certificate/sample-certificate"
+		},
+		{
+			"name": "Responsive Web Design",
+			"date": "2021-08-20",
+			"issuer": "Udemy",
+			"url": "https://udemy.com/certificate/sample-certificate"
+		},
+		{
+			"name": "HTML and CSS: Design and Build Websites",
+			"date": "2021-06-27",
+			"issuer": "Udemy",
+			"url": "https://udemy.com/certificate/sample-certificate"
+		}
+	]
+}
