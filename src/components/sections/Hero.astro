@@ -36,7 +36,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 					}
 					{
 						email && (
-							<a href={`mailto:{email}`} title={`Send an email to ${name} at ${email}`} target="_blank" rel="noopener noreferrer">
+							<a href={`mailto:${email}`} title={`Send an email to ${name} at ${email}`} target="_blank" rel="noopener noreferrer">
 								<span class="flex flex-row items-center gap-2">
 									<Mail /> {email}
 								</span>
@@ -45,7 +45,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 					}
 					{
 						phone && (
-							<a href={`tel:{phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
+							<a href={`tel:${phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
 								<span class="flex flex-row items-center gap-2">
 									<Phone /> {phone}
 								</span>
