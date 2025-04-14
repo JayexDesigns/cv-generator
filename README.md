@@ -30,7 +30,7 @@
 <h4>Prepare Your JSON Data</h4>
 <ul>
 	<li>Copy the file <code><a href="./data/cv-example.json">./data/cv-example.json</a></code> to <code>./data/cv.json</code> and edit the content to match your needs.</li>
-	<li>Save your profile picture to <code><a href="./public/avatar.webp">./public/avatar.webp</a></code> or edit the <code>./data/cv.json</code> <code>basics.image</code> property and write the URL to your profile picture.</li>
+	<li>Save your profile picture to <code>./public/avatar.webp</code> or edit the <code>./data/cv.json</code> <code>basics.image</code> property and write the URL to your profile picture.</li>
 	<li>Execute the command <code>npm run dev</code> to start the development server and preview your resume.</li>
 	<li>Once you have what you want you can print or save the PDF file of your resume pressing <kbd>CTRL</kbd> + <kbd>P</kbd>.</li>
 </ul>
