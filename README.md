@@ -2,7 +2,7 @@
 <p align="center">A tool designed to generate resumes from your resume details in a JSON file</p>
 
 > [!WARNING]
-> I have made the template according to my needs, it may not fit your case but the structure can be easily modified
+> I have made the template according to my needs, it may not fit your case but the structure can be easily modified by changing the styles on the `src/components/sections` files
 
 <h2>Preview</h2>
 <p align="center"><img src="./example.png" width="60%"></img></p>

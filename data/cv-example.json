@@ -75,6 +75,7 @@
 		"HTML",
 		"CSS",
 		"JavaScript",
+		"TypeScript",
 		"React",
 		"Node.js",
 		"Python",
@@ -86,7 +87,6 @@
 		"MongoDB",
 		"PostgreSQL",
 		"Linux",
-		"Docker",
 		"Kubernetes"
 	],
 	"languages": [
